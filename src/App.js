@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
+import HomePage from './components/HomePage'
 
 class App extends Component {
   render() {
@@ -9,7 +10,7 @@ class App extends Component {
       <Router>
         <NavBar />
         <Switch>
-
+          <Route exact path="/" component={ HomePage } />
         </Switch>
         <Footer />
       </Router>
