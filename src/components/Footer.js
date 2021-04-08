@@ -4,7 +4,7 @@ class Footer extends Component {
     render() {
         return (
             <div>
-                Footer
+                &copy; MB My Portfolio, 2021
             </div>
         )
     }
