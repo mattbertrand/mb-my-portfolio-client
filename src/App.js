@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { getProjects } from './actions/index'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import HomePage from './components/HomePage'
@@ -10,6 +11,11 @@ import AboutMe from './components/AboutMe'
 
 class App extends Component {
   render() {
+    if (this.props.loading) {
+      return (
+        <h3>Loading...</h3>
+      )
+    }
     return (
       <Router>
         <NavBar />
