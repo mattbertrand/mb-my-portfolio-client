@@ -1,13 +1,22 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import Project from './Project'
 
 class Index extends Component {
     render() {
+        const projects = this.props.projects.map( (project, i) => <Project key={i} title={project.title} category={project.category} image_link={project.image_link} />)
         return (
             <div>
-                List Page
+                { projects }
             </div>
         )
     }
 }
 
-export default Index
+const mapStateToProps = state => {
+    return {
+        projects: state.projects
+    }
+}
+
+export default connect(mapStateToProps)(Index)
