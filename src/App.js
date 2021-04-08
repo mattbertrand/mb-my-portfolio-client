@@ -10,6 +10,11 @@ import ErrorPage from './components/ErrorPage'
 import AboutMe from './components/AboutMe'
 
 class App extends Component {
+
+  componentDidMount() {
+    this.props.getProjects()
+  }
+
   render() {
     if (this.props.loading) {
       return (
