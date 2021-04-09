@@ -7,6 +7,12 @@ class Form extends Component {
         image_link: ''
     }
 
+    handleChange = e => {
+        this.setState({
+            [e.target.name]: e.target.value
+        })
+    }
+
     render() {
         return (
             <div>
@@ -21,8 +27,8 @@ class Form extends Component {
                        <input type="text" id="category" name="category" value={this.state.category} onChange={ this.handleChange }/>
                    </div>
                    <div>
-                       <label htmlFor="image">Image</label>
-                       <input type="text" id="image" name="image" value={this.state.image} onChange={ this.handleChange }/>
+                       <label htmlFor="image_link">Image</label>
+                       <input type="text" id="image_link" name="image_link" value={this.state.image_link} onChange={ this.handleChange }/>
                    </div>
                    <input type="submit" value="Add Project" />
                </form>
