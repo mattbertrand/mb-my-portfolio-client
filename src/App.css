@@ -85,3 +85,29 @@ nav ul li {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+.about-left img {
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+div.about-left {
+  margin: 100px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 900px;
+}
+
+div.about-right {
+  margin: 100px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 900px;
+}
+
+div.social {
+  text-align: center;
+}
+
