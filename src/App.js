@@ -32,6 +32,7 @@ class App extends Component {
           <Route exact path="/about" component={ AboutMe } />
           <Route exact path="/projects" component={ Index } />
           <Route exact path="/projects/new" component={ Form } />
+          {/* <Route exact path="/projects/${id}/edit" component={ Edit } /> */}
           <Route component={ ErrorPage } />
         </Switch>
         <Footer />

@@ -24,3 +24,20 @@ export const addProject = (project, history) => {
         })    
     }
 }
+
+export const deleteProject = (id, history) => {
+    return dispatch => {
+        fetch(`http://localhost:3001/projects/${id}`, {
+            method: "DELETE",
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json"
+            }, 
+        })
+        .then(resp => resp.json())
+        .then(project => {
+            dispatch({ type: "DELETE_POST", project})
+            history.push("/projects")
+        })
+    }
+}
