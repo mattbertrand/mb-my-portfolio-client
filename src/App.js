@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './App.css'
 import { connect } from 'react-redux'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { getProjects } from './actions/index'
