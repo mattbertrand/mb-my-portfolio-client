@@ -9,6 +9,7 @@ import Index from './components/Index'
 import ErrorPage from './components/ErrorPage'
 import AboutMe from './components/AboutMe'
 import Form from './components/Form'
+import "bootstrap/dist/css/bootstrap.min.css"
 
 class App extends Component {
 
