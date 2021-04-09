@@ -16,6 +16,11 @@ const projectsReducer = (state=initialState, action) => {
                 loading: false,
                 projects: action.projects
             }
+        case "ADD_PROJECT":
+            return {
+                ...state,
+                projects: [...state.projects, action.project]
+            }
         default:
             return state
     }
