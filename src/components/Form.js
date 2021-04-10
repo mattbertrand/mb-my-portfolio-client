@@ -26,19 +26,19 @@ class Form extends Component {
             <div>
                <h3>Add a Project</h3>
                <form onSubmit={ this.handleSubmit }>
-                   <div>
+                   <div className="form-group">
                        <label htmlFor="title">Title</label>
-                       <input type="text" id="title" name="title" value={this.state.title} onChange={ this.handleChange }/>
+                       <input class="form-control" type="text" id="title" name="title" value={this.state.title} onChange={ this.handleChange } required/>
                    </div>
                    <div>
                        <label htmlFor="category">Category</label>
-                       <input type="text" id="category" name="category" value={this.state.category} onChange={ this.handleChange }/>
+                       <input class="form-control" type="text" id="category" name="category" value={this.state.category} onChange={ this.handleChange } required/>
                    </div>
                    <div>
                        <label htmlFor="image_link">Image</label>
-                       <input type="text" id="image_link" name="image_link" value={this.state.image_link} onChange={ this.handleChange }/>
+                       <input class="form-control" type="text" id="image_link" name="image_link" value={this.state.image_link} onChange={ this.handleChange } required/>
                    </div>
-                   <input type="submit" value="Add Project" />
+                   <button class="btn btn-primary " type="submit">Add Project</button>
                </form>
             </div>
         )
