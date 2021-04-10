@@ -186,4 +186,30 @@ a:hover {
   text-decoration: underline;
 }
 
+.masthead img {
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.home-card {
+  text-align: center;
+  width: 20%;
+  background-color: #353f9b;
+  color: #bfbfbf;
+  line-height: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 2px solid #bfbfbf;
+  border-radius: 10px;
+  height: 100px;
+  font-style: italic;
+  font-size: 50px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap');
