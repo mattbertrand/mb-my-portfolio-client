@@ -7,7 +7,7 @@ class Project extends Component {
         const { title, category, image_link, id } = this.props
 
         return (
-            <div className="projects">
+            <div className="projects" >
                 <h3>{ title }</h3>
                 <p>{ category }</p>
                 <img alt="Project"src={ image_link }/>
