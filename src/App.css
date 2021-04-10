@@ -120,4 +120,14 @@ body {
   background-color: #c2c5db!important;
 }
 
+.resume {
+  padding: 30px 10%;
+  text-align: center;
+}
+
+.resume img {
+  padding-top: 20px;
+  width: 80%
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap');

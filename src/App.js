@@ -10,6 +10,7 @@ import Index from './components/Index'
 import ErrorPage from './components/ErrorPage'
 import AboutMe from './components/AboutMe'
 import Form from './components/Form'
+import Resume from './components/Resume'
 import "bootstrap/dist/css/bootstrap.min.css"
 
 class App extends Component {
@@ -32,6 +33,7 @@ class App extends Component {
           <Route exact path="/about" component={ AboutMe } />
           <Route exact path="/projects" component={ Index } />
           <Route exact path="/projects/new" component={ Form } />
+          <Route exact path="/resume" component={ Resume } />
           {/* <Route exact path="/projects/${id}/edit" component={ Edit } /> */}
           <Route component={ ErrorPage } />
         </Switch>

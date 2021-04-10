@@ -1,13 +1,15 @@
-import React, { Component } from 'react'
+import resume2021 from './pdf/resume2021.pdf'
 
-class Resume extends Component {
-    render() {
+const Resume = () => {
         return (
             <div className="resume">
-                    <img alt="My Resume" src=""/>
+                <h1>My Resume</h1>
+                <em>Click on the resume to download...</em>
+                <a href={resume2021} download>
+                    <img alt="My Resume" src="https://i.ibb.co/swwzSgT/resume2021.jpg"/>
+                </a>
             </div>
         )
     }
-}
 
 export default Resume
