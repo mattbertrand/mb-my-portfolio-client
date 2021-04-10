@@ -79,6 +79,10 @@ nav ul li {
   border-top: 0.1875rem solid var(--primary-orange) !important;
 }
 
+.footer {
+  color: var(--primary-dark) !important;
+}
+
 .projects {
   padding: 30px 10%;
   text-align: center;

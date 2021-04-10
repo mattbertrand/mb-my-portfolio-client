@@ -12,6 +12,7 @@ import AboutMe from './components/AboutMe'
 import Form from './components/Form'
 import Resume from './components/Resume'
 import "bootstrap/dist/css/bootstrap.min.css"
+import 'mdbreact/dist/css/mdb.css';
 
 class App extends Component {
 
