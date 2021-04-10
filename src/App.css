@@ -111,6 +111,11 @@ div.social {
   text-align: center;
 }
 
+.button-color {
+  background-color: rgb(61, 61, 77);
+  color: var(--primary-white)
+}
+
 body {
   background-color: #c2c5db!important;
 }
