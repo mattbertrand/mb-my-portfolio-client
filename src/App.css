@@ -79,6 +79,11 @@ nav ul li {
   border-top: 0.1875rem solid var(--primary-orange) !important;
 }
 
+.projects {
+  padding: 30px 10%;
+  text-align: center;
+}
+
 .projects img {
   width: 100%;
   max-width: 800px;
