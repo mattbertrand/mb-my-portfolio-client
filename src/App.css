@@ -102,18 +102,12 @@ nav ul li {
   padding-bottom: 10px;
 }
 
-div.about-left {
-  margin: 100px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 900px;
-}
-
 div.about-right {
   margin: 100px;
   border: 1px solid #ccc;
   float: left;
   width: 900px;
+  text-align: center;
 }
 
 div.social {
