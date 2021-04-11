@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import './App.css'
 import { connect } from 'react-redux'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { getProjects } from './actions/index'
+import { getProjects } from './actions/projects/project'
+import { getBlogs } from './actions/blogs/blog'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import HomePage from './components/HomePage'
@@ -17,9 +18,9 @@ import 'mdbreact/dist/css/mdb.css';
 
 class App extends Component {
 
-  componentDidMount() {
-    this.props.getProjects()
-  }
+  // componentDidMount() {
+  //   this.props.getProjects()
+  // }
 
   render() {
     if (this.props.loading) {
@@ -52,4 +53,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps, { getProjects })(App);
+export default connect(mapStateToProps, { getProjects, getBlogs })(App);
