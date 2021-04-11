@@ -6,7 +6,7 @@ class AboutMe extends Component {
             <div className="container">
                 <div className="card">
                     <div className="about-left">
-                        <img alt="Matthieu Bertrand Picture" src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.18169-9/10151929_10152644591337360_4797206138322020122_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=174925&_nc_ohc=Do0fBFeRArYAX8Fapcj&_nc_ht=scontent-sjc3-1.xx&oh=bcc94f190988caef03dd908a47d8d7dc&oe=609686A4"/> 
+                        <img alt="Matthieu Bertrand" src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.18169-9/10151929_10152644591337360_4797206138322020122_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=174925&_nc_ohc=Do0fBFeRArYAX8Fapcj&_nc_ht=scontent-sjc3-1.xx&oh=bcc94f190988caef03dd908a47d8d7dc&oe=609686A4"/> 
                         <div className="social">
                             <h2>Matthieu Bertrand</h2>
                             <p>Novato, CA</p>

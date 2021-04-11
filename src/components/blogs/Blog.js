@@ -4,7 +4,7 @@ class Blog extends Component {
     render() {
         return (
             <div>
-                Blog
+                <p>{ this.props.content }</p>
             </div>
         )
     }

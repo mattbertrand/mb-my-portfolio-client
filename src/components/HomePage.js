@@ -7,7 +7,7 @@ class HomePage extends Component {
             // <div className="App">
             //     <h1>Welcome to my Portfolio</h1>
             // </div>
-            <header class="masthead d-flex">
+            <header className="masthead d-flex">
             <div className="container text-center my-auto">
                 <br />
             <h1 className="mb-1">Welcome to my Matthieu Bertrand's Portfolio</h1>
