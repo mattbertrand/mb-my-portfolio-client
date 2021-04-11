@@ -18,9 +18,10 @@ import 'mdbreact/dist/css/mdb.css';
 
 class App extends Component {
 
-  // componentDidMount() {
-  //   this.props.getProjects()
-  // }
+  componentDidMount() {
+    this.props.getProjects()
+    this.props.getBlogs()
+  }
 
   render() {
     if (this.props.loading) {
