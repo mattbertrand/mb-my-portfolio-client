@@ -38,6 +38,9 @@ class NavBar extends Component {
                 <li className="nav-item">
                     <a className="nav-link" href="/resume">My Resume</a>
                 </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="/blogs">Blogs</a>
+                </li>
                 </ul>
             </div>
             </div>
