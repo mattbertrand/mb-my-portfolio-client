@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-class Form extends Component {
+class BlogIndex extends Component {
     render() {
         return (
             <div>
-                Form
+                List Page
             </div>
         )
     }
 }
 
-export default Form
+export default BlogIndex
