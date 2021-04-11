@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { deleteProject } from '../actions/index'
+import { deleteProject } from '../../actions/index'
 import { Link } from 'react-router-dom'
 
 class Project extends Component {

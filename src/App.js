@@ -6,10 +6,10 @@ import { getProjects } from './actions/index'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import HomePage from './components/HomePage'
-import Index from './components/Index'
+import Index from './components/projects/Index'
 import ErrorPage from './components/ErrorPage'
 import AboutMe from './components/AboutMe'
-import Form from './components/Form'
+import Form from './components/projects/Form'
 import Resume from './components/Resume'
 import "bootstrap/dist/css/bootstrap.min.css"
 import 'mdbreact/dist/css/mdb.css';
