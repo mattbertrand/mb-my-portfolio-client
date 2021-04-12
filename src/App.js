@@ -15,6 +15,7 @@ import Form from './components/projects/Form'
 import Resume from './components/Resume'
 import "bootstrap/dist/css/bootstrap.min.css"
 import 'mdbreact/dist/css/mdb.css';
+import ProjectShow from './components/projects/ProjectShow'
 
 class App extends Component {
 
@@ -38,8 +39,8 @@ class App extends Component {
           <Route exact path="/projects" component={ Index } />
           <Route exact path="/projects/new" component={ Form } />
           <Route exact path="/resume" component={ Resume } />
+          <Route exact path="/projects/:projectId" component={ ProjectShow } />
           <Route exact path="/blogs" component={ BlogIndex } />
-          {/* <Route exact path="/projects/${id}/edit" component={ Edit } /> */}
           <Route component={ ErrorPage } />
         </Switch>
         <Footer />
