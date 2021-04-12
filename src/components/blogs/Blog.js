@@ -2,9 +2,10 @@ import React, { Component } from 'react'
 
 class Blog extends Component {
     render() {
+        const { content } = this.props
         return (
             <div>
-                <p>{ this.props.content }</p>
+                <p>{ content }</p>
             </div>
         )
     }

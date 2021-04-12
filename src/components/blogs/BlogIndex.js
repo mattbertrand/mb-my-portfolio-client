@@ -4,9 +4,11 @@ import Blog from './Blog'
 
 class BlogIndex extends Component {
     render() {
+        console.log(this.props.blogs)
+        const blogs = this.props.blogs.map ( (blog, i) => <Blog key={blog.id} content={blog.content} history={this.props.history} blog={blog}/>)
         return (
             <div>
-                List Page
+                { blogs }
             </div>
         )
     }
@@ -14,7 +16,7 @@ class BlogIndex extends Component {
 
 const mapStateToProps = state => {
     return {
-        blogs: state.blogs
+        blogs: state.blogs.blogs
     }
 }
 

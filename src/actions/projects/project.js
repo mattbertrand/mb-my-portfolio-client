@@ -36,7 +36,6 @@ export const deleteProject = (id, history) => {
         })
         .then(resp => resp.json())
         .then(project => {
-            console.log(project)
             dispatch({ type: "DELETE_PROJECT", project})
             history.push("/projects")
         })
