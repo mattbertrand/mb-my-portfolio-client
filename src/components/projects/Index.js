@@ -17,7 +17,6 @@ class Index extends Component {
 const mapStateToProps = state => {
     return {
         projects: state.projects
-        // blogs: state.blogs.blogs
     }
 }
 

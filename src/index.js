@@ -5,13 +5,8 @@ import { createStore, applyMiddleware } from 'redux'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import projectsReducer from './reducers/projectsReducer'
-// import blogsReducer from './reducers/blogsReducer'
 import thunk from 'redux-thunk'
 
-// const rootReducer = combineReducers({
-//   projects: projectsReducer,
-//   blogs: blogsReducer
-// })
 
 const store = createStore(projectsReducer, applyMiddleware(thunk))
 

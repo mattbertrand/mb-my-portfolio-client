@@ -7,13 +7,6 @@ class Project extends Component {
         const { title, category, image_link, youtube_link, github_link, medium_link, id } = this.props
 
         return (
-            // <div className="projects" >
-            //     <h3>{ title }</h3>
-            //     <p>{ category }</p>
-            //     <img alt="Project"src={ image_link }/>
-            //     <br />
-            //     <button className="button-color" onClick={() => this.props.deleteProject(id, this.props.history)}>Delete Project</button>
-            // </div>
             <div className="card">
             <div className="card-body">
                 <div className="projects" >

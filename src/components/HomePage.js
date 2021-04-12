@@ -4,9 +4,6 @@ import { Link } from 'react-router-dom'
 class HomePage extends Component {
     render() {
         return (
-            // <div className="App">
-            //     <h1>Welcome to my Portfolio</h1>
-            // </div>
             <header className="masthead d-flex">
             <div className="container text-center my-auto">
                 <br />
