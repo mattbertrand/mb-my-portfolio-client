@@ -4,7 +4,13 @@ class BlogForm extends Component {
     render() {
         return (
             <div>
-                Form
+                <form>
+                    <div>
+                        <label>Content</label>
+                        <textarea></textarea>
+                    </div>
+                    <input type="submit" value="Add Blog" />
+                </form>
             </div>
         )
     }

@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 import HomePage from './components/HomePage'
 import Index from './components/projects/Index'
 import BlogIndex from './components/blogs/BlogIndex'
+import BlogForm from './components/blogs/BlogForm'
 import ErrorPage from './components/ErrorPage'
 import AboutMe from './components/AboutMe'
 import Form from './components/projects/Form'
@@ -39,8 +40,9 @@ class App extends Component {
           <Route exact path="/projects" component={ Index } />
           <Route exact path="/projects/new" component={ Form } />
           <Route exact path="/resume" component={ Resume } />
-          <Route exact path="/projects/:projectId" component={ ProjectShow } />
+          {/* <Route exact path="/projects/:projectId" component={ ProjectShow } />
           <Route exact path="/blogs" component={ BlogIndex } />
+          <Route exact path="/blogs/new" component={ BlogForm } /> */}
           <Route component={ ErrorPage } />
         </Switch>
         <Footer />
