@@ -4,8 +4,8 @@ import Project from './Project'
 
 class Index extends Component {
     render() {
-        console.log(this.props.projects)
-        const projects = this.props.projects.map( (project, i) => <Project key={i} title={project.title} category={project.category} image_link={project.image_link} id={project.id} history={this.props.history} project={project}/>)
+        console.log(this.props)
+        const projects = this.props.projects.map( (project, i) => <Project key={i} title={project.title} category={project.category} image_link={project.image_link} youtube_link={project.youtube_link} github_link={project.github_link} medium_link={project.medium_link} id={project.id} history={this.props.history} project={project}/>)
         return (
             <div>
                 { projects }
@@ -16,8 +16,8 @@ class Index extends Component {
 
 const mapStateToProps = state => {
     return {
-        projects: state.projects.projects,
-        blogs: state.blogs.blogs
+        projects: state.projects
+        // blogs: state.blogs.blogs
     }
 }
 

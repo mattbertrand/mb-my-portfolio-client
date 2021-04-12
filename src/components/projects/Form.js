@@ -6,7 +6,10 @@ class Form extends Component {
     state = {
         title: '',
         category: '',
-        image_link: ''
+        image_link: '',
+        youtube_link: '',
+        github_link: '',
+        medium_link: ''
     }
 
     handleChange = e => {
@@ -37,6 +40,18 @@ class Form extends Component {
                    <div>
                        <label htmlFor="image_link">Image</label>
                        <input className="form-control" type="text" id="image_link" name="image_link" value={this.state.image_link} onChange={ this.handleChange } required/>
+                   </div>
+                   <div>
+                       <label htmlFor="youtube_link">Image</label>
+                       <input className="form-control" type="text" id="youtube_link" name="youtube_link" value={this.state.youtube_link} onChange={ this.handleChange } required/>
+                   </div>
+                   <div>
+                       <label htmlFor="github_link">Image</label>
+                       <input className="form-control" type="text" id="github_link" name="github_link" value={this.state.github_link} onChange={ this.handleChange } required/>
+                   </div>
+                   <div>
+                       <label htmlFor="medium_link">Image</label>
+                       <input className="form-control" type="text" id="medium_link" name="medium_link" value={this.state.medium_link} onChange={ this.handleChange } required/>
                    </div>
                    <br />
                    <button className="button-color" type="submit">Add Project</button>

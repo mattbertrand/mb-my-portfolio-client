@@ -3,26 +3,26 @@ import './App.css'
 import { connect } from 'react-redux'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { getProjects } from './actions/projects/project'
-import { getBlogs } from './actions/blogs/blog'
+// import { getBlogs } from './actions/blogs/blog'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import HomePage from './components/HomePage'
 import Index from './components/projects/Index'
-import BlogIndex from './components/blogs/BlogIndex'
-import BlogForm from './components/blogs/BlogForm'
+// import BlogIndex from './components/blogs/BlogIndex'
+// import BlogForm from './components/blogs/BlogForm'
 import ErrorPage from './components/ErrorPage'
 import AboutMe from './components/AboutMe'
 import Form from './components/projects/Form'
 import Resume from './components/Resume'
 import "bootstrap/dist/css/bootstrap.min.css"
 import 'mdbreact/dist/css/mdb.css';
-import ProjectShow from './components/projects/ProjectShow'
+// import ProjectShow from './components/projects/ProjectShow'
 
 class App extends Component {
 
   componentDidMount() {
     this.props.getProjects()
-    this.props.getBlogs()
+    // this.props.getBlogs()
   }
 
   render() {
@@ -57,4 +57,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps, { getProjects, getBlogs })(App);
+export default connect(mapStateToProps, { getProjects })(App);

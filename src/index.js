@@ -1,19 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
-import { createStore, applyMiddleware, combineReducers } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import projectsReducer from './reducers/projectsReducer'
-import blogsReducer from './reducers/blogsReducer'
+// import blogsReducer from './reducers/blogsReducer'
 import thunk from 'redux-thunk'
 
-const rootReducer = combineReducers({
-  projects: projectsReducer,
-  blogs: blogsReducer
-})
+// const rootReducer = combineReducers({
+//   projects: projectsReducer,
+//   blogs: blogsReducer
+// })
 
-const store = createStore(rootReducer, applyMiddleware(thunk))
+const store = createStore(projectsReducer, applyMiddleware(thunk))
 
 ReactDOM.render(
   <React.StrictMode>
