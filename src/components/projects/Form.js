@@ -42,15 +42,15 @@ class Form extends Component {
                        <input className="form-control" type="text" id="image_link" name="image_link" value={this.state.image_link} onChange={ this.handleChange } required/>
                    </div>
                    <div>
-                       <label htmlFor="youtube_link">Image</label>
+                       <label htmlFor="youtube_link">Youtube</label>
                        <input className="form-control" type="text" id="youtube_link" name="youtube_link" value={this.state.youtube_link} onChange={ this.handleChange } required/>
                    </div>
                    <div>
-                       <label htmlFor="github_link">Image</label>
+                       <label htmlFor="github_link">Github</label>
                        <input className="form-control" type="text" id="github_link" name="github_link" value={this.state.github_link} onChange={ this.handleChange } required/>
                    </div>
                    <div>
-                       <label htmlFor="medium_link">Image</label>
+                       <label htmlFor="medium_link">Medium</label>
                        <input className="form-control" type="text" id="medium_link" name="medium_link" value={this.state.medium_link} onChange={ this.handleChange } required/>
                    </div>
                    <br />
